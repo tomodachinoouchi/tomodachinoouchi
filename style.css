@@ -1,0 +1,177 @@
+body {
+  margin: 0; /* ブラウザのデフォルト余白をなくす */
+  padding: 0;
+  font-family: sans-serif; /* フォント指定 */
+  background-color: #43240e; /* 背景色：濃い茶色 */
+  color: #333; /* デフォルト文字色 */
+  line-height: 1.6; /* 行間 */
+  box-sizing: border-box; /* パディングやボーダー含めてサイズ計算 */
+}
+
+/* ───── ヘッダー全体 ───── */
+header {
+  position: relative;
+  text-align: center;
+  color: white;
+  font-family: 'Yu Gothic', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #43240e;
+}
+
+/* ヘッダー画像 */
+header img {
+  width: 100%;
+  height: 200px; /* 高さを固定 */
+  object-fit: cover; /* 画像の縦横比を保って全体に表示 */
+  display: block;
+}
+
+/* ヘッダー文字を中央に重ねる用オーバーレイ */
+.header-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* ヘッダーのタイトルテキスト */
+.header-overlay h1 {
+  background-color: transparent;
+  color: white;
+  padding: 0.5em 1em;
+  border-radius: 10px;
+  font-size: 1.8em;
+  text-align: center;
+}
+
+/* 旧バナー画像のスタイル（使ってなければ削除OK） */
+.header-banner img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  filter: brightness(0.7); /* 少し暗くする（文字が読みやすくなる） */
+}
+
+/* ───── お知らせボックス ───── */
+.notice-box {
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 8px;
+  padding: 1em;
+  margin-bottom: 1.5em;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  font-family: 'Yu Gothic', sans-serif;
+}
+
+/* お知らせ見出し */
+.notice-box h2 {
+  font-size: 1.3em;
+  color: #b85c38; /* ブラウン寄りの赤 */
+  margin-bottom: 0.5em;
+  text-align: center;
+}
+
+/* お知らせ本文ラッパー */
+.notice-content {
+  max-height: 6em; /* 高さ制限でスクロールさせる */
+  overflow-y: auto;
+  padding-right: 0.5em;
+}
+
+.notice-content ul {
+  margin: 0;
+  padding-left: 1.2em;
+}
+
+.notice-content li {
+  margin-bottom: 0.5em;
+  line-height: 1.6;
+  color: #444;
+}
+
+/* ───── フッター ───── */
+footer {
+  background-color: #000;
+  color: white;
+  padding: 1em 0;
+  text-align: center;
+}
+
+/* ───── 全体コンテナ ───── */
+.container {
+  max-width: 800px;
+  margin: 0 auto; /* 中央寄せ */
+}
+
+/* ───── ナビゲーションメニュー ───── */
+nav {
+  background-color: white;
+  padding: 1em 0;
+  text-align: center;
+  border-radius: 8px;
+  font-family: 'Yu Gothic', 'Hiragino Kaku Gothic ProN', sans-serif;
+  font-size: 16px;
+  color: #444;
+}
+
+nav a {
+  color: #444;
+  text-decoration: none;
+  margin: 0 0.5em;
+  padding: 0 0.5em;
+  border-left: 1px solid #ccc;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+nav a:first-child {
+  border-left: none;
+}
+
+nav a:hover {
+  color: #000;
+}
+
+/* LINE追加ボタンの画像サイズ調整 */
+.line-link img {
+  height: 28px;
+  vertical-align: middle;
+}
+
+/* ───── メインコンテンツ ───── */
+main {
+  background-color: white;
+  padding: 1em;
+  margin-top: -12px; /* ナビと被らないようにするための調整 */
+  border-radius: 8px;
+  position: relative;
+  z-index: 1;
+}
+
+/* LINE追加ボタン（下部） */
+.btn-line {
+  display: inline-block;
+  margin-top: 1em;
+}
+
+.btn-line img {
+  height: 36px;
+}
+
+/* ───── 画像3枚横並び ───── */
+.image-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 1.5em;
+  flex-wrap: wrap; /* 画面が狭いときに折り返す */
+}
+
+.image-row img {
+  width: 32%;
+  border-radius: 8px;
+  object-fit: cover;
+  height: 150px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,134 @@
+body {
+	margin: 0;
+	font-family: "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+	background-color: #fffdfc;
+	color: #333;
+	line-height: 1.6;
+}
+
+header {
+	position: relative;
+	text-align: center;
+	color: white;
+	font-family: 'Yu Gothic', sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #43240e;
+}
+
+header img {
+	width: 100%;
+	height: 200px;
+	object-fit: cover;
+	display: block;
+}
+
+.header-overlay {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.header-overlay h1 {
+	background-color: transparent;
+	color: white;
+	padding: 0.5em 1em;
+	border-radius: 10px;
+	font-size: 1.8em;
+	text-align: center;
+}
+
+
+footer {
+	background-color: #43240e;
+	color: white;
+	padding: 1.5em 0;
+	text-align: center;
+}
+
+.container {
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+nav {
+	background-color: white;
+	padding: 1em 0.5em;
+	text-align: center;
+	border-radius: 8px;
+	margin-top: 1em;
+}
+
+nav a {
+	color: #444;
+	text-decoration: none;
+	margin: 0 0.5em;
+	padding: 0 0.5em;
+	border-left: 1px solid #ffffff;
+	display: inline-block;
+	font-weight: 500;
+	vertical-align: middle;
+}
+
+nav a:first-child {
+	border-left: none;
+}
+
+nav a:hover {
+	color: #000;
+}
+
+.line-link img {
+	height: 28px;
+	vertical-align: middle;
+}
+
+main {
+	background-color: #ffffff;
+	padding: 2em;
+	margin-top: -12px;
+	border-radius: 8px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+h2 {
+	font-size: 1.8em;
+	color: #333;
+	margin-bottom: 1em;
+	border-bottom: 2px solid #eee;
+	padding-bottom: 0.5em;
+}
+
+.menu-list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.menu-list li {
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 1px dashed #ddd;
+	padding: 0.7em 0;
+	font-size: 1.1em;
+}
+
+.menu-title {
+	font-weight: bold;
+}
+
+.menu-price {
+	color: #43240e;
+}
+
+.note {
+	margin-top: 1.5em;
+	font-size: 0.95em;
+	color: #666;
+	text-align: center;
+}
+
+footer {
+	margin-top: 3em;
+}
